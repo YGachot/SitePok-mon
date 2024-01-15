@@ -1,0 +1,208 @@
+body {
+    margin: 0px;
+    font-family: 'Pokemon Solid', sans-serif;
+    background: url(https://cdn.discordapp.com/attachments/1020008766479020033/1068099949595742208/109332.png)
+    center/cover fixed no-repeat;
+}
+
+* {
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051944700317270067/icons8-instinct-pokemon-30.png') 30 30, auto;
+}   
+
+img {
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051943830565437442/icons8-instinct-pokemon-30.png') 30 30, auto;
+}
+
+p.nom_pokemon {
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051943830565437442/icons8-instinct-pokemon-30.png') 30 30, auto;
+}
+
+
+/*************** Cartes Pokemon **************/
+.emplacement_complet_pokemon{
+    top: 65%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    margin: 15px;
+    margin-top: 0px;
+}   
+
+.image_pokemon {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image_container {
+    width: 95%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.nom_pokemon {
+    justify-content: center;
+    height: auto;
+    margin: auto;
+    display: flex;
+    font-size: 2rem;
+}
+
+.card_pokemon {
+    margin: 2px;
+    border-radius: 10px;
+    border: black 1.5px solid;
+}
+/************************** Header *************************/
+.recherchePokémon {
+    font-family: 'Pokemon Solid', sans-serif;
+    color: black;
+    font-size: x-large;
+    position: relative;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051946473773871154/icons8-text-cursor-30.png'), text;
+}
+
+.FormSearch {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    display: flex;
+    height: max-content;
+}
+
+.recherchePokémon:hover {
+    background-color: rgba(237, 231, 225);
+}
+
+.mypokedex {
+    top: 10px;
+    width: 60%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+
+#suggestion {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    left: 26%;
+    top: 100%;
+    font-size: x-large;
+    width: 48%;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.suggestion {
+    border-bottom: 2.5px black solid;
+    border-left: 2.5px black solid;
+    border-right: 2.5px black solid;
+}
+
+.suggestion:hover {
+    background-color: rgba(237, 231, 225);
+}
+
+#button {
+    border: black 2.5px solid;
+    background-color: white;
+    font-size: x-large;
+    font-family: 'Pokemon Solid', sans-serif;
+    height: auto;
+    width: 24%;
+    position: absolute;
+    border-radius: 10px;
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051943830565437442/icons8-instinct-pokemon-30.png') 30 30 , pointer;
+}
+
+#button:hover {
+    background-color: rgba(237, 231, 225);
+}
+
+.button_switch_right {
+    top: 52.5%;
+    right: 13%;
+}
+
+.button_switch_left {
+    top: 52.5%;
+    left: 13%;
+}
+.jeulien {
+    z-index: 2;
+}
+
+.jeustart {
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: x-large;
+    border: black 2.5px solid;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    width: 24%;
+    top: 52.5%;
+    left: 38%;
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051943830565437442/icons8-instinct-pokemon-30.png') 30 30 , pointer;
+}
+
+.jeustart:hover {
+    background-color: rgba(237,231,225);
+}
+/****************************************** responsive *******************************************/
+
+@media screen and (max-width: 1300px) {
+    .nom_pokemon {
+      font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .nom_pokemon {
+      font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .recherchePokémon {
+      font-size: large;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nom_pokemon {
+      font-size: 0.7rem;
+    }
+    .recherchePokémon {
+        font-size: small;
+        margin-top: -15px;
+    }
+    .emplacement_complet_pokemon {
+        margin-top: -15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .recherchePokémon {
+      font-size: xx-small;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nom_pokemon {
+      font-size: 6pt;
+    }
+}
+

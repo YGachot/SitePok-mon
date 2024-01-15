@@ -1,0 +1,337 @@
+body{
+    background: url(https://cdn.discordapp.com/attachments/1020008766479020033/1068101688004714527/1085994.jpg)
+    center/cover fixed no-repeat;
+    margin: 0px;
+    font-family: 'Pokemon Solid', sans-serif;
+    height: 50vh;
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051944700317270067/icons8-instinct-pokemon-30.png') 30 30, auto;
+}
+
+p {
+    display:inline;
+}
+
+* {
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051944700317270067/icons8-instinct-pokemon-30.png') 30 30, auto;
+}
+
+img:not(.image_type_1_pokemon, .image_type_2_pokemon, .image_pokemon) {
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051943830565437442/icons8-instinct-pokemon-30.png') 30 30, auto;
+}
+
+/************************** Bande noire haut de la page *******************************/
+
+.acceuil{
+    width: 50px;
+    height: 50px;
+    margin-top: 8px;
+    margin-left: 8px;
+    z-index: 3;
+    opacity: 1;
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051943830565437442/icons8-instinct-pokemon-30.png') 30 30 , pointer;
+}
+
+.bandeH{
+    background-color: rgba(0, 0, 0, 0.85);
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top : 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 2;
+}
+
+.mypokedex{
+    width: 175px;
+    height: 50px;
+    margin-right: 12px;
+    margin-top: 8px;
+    opacity: 1;
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051943830565437442/icons8-instinct-pokemon-30.png') 30 30 , pointer;
+}
+/*************************** Carte pokemon complete ***************************/
+
+.carte_complete{
+    border-radius: 15px;
+    margin: 8px;
+    margin-top: 0px;
+    height: 80vh; 
+}
+/************************* Image Pokemon *******************************/
+
+.image_container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    border: black 2.5px solid;
+    border-radius: 10px;
+    display: flex;
+}
+.image_pokemon {
+    width: 100%;
+    display: flex;
+    height: auto;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 10px;
+  }
+
+/****************************** Pokemon Identificateurs *******************************/
+
+.identificateur {
+    display: block;
+    column-count: 1;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 12%;
+    width: 23%;
+    left: 2%;
+    height: min-content;
+    
+}
+.nom_pokemon{
+    width: 80%;
+    text-transform: uppercase;
+    display: flex;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    border-bottom: black 2.5px solid;
+    border-left: black 2.5px solid;
+    border-right: black 2.5px solid;
+    font-size: x-large;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: min-content;
+    background-color: rgba(255, 255, 255, 0.686);
+    z-index: 2;
+}
+
+.id_pokemon{
+    height: min-content;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    justify-content: center;
+    width: 80%;
+    border-bottom: black 2.5px solid;
+    border-left: black 2.5px solid;
+    border-right: black 2.5px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 10%;
+    margin-left: 10%; 
+    background-color: rgba(255, 255, 255, 0.686);
+    z-index: 1;
+}
+
+
+/************************** Pokemon stats *************************/
+
+.stats_pokemon{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    top: 12%;
+    left: 25%;
+    padding-left: 1%;
+    width: 22%;
+    height: 23vw;
+    margin-left: 25px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: black 2.5px solid;
+    background-color: rgba(255, 255, 255, 0.686);
+}
+
+.PokemonStatsAnonce{
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 0px;
+}
+
+/*************************** Pokemon faiblesses *****************/
+.faiblesses_pokemon{
+    font-size: 1.03rem;
+    width: 100%;
+    height: 100%;
+    border: black 2.5px solid;
+    border-radius: 10px;
+    column-count: 3;
+    column-gap: 0px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flexbox    ;
+    background-color: rgba(255, 255, 255, 0.686);
+}
+
+.faib_container {
+    position: absolute;
+    display: flex;
+    width: 46%;
+    top: 12%;
+    left: 52%;
+    height: 23vw;
+}
+
+.divvide {
+    opacity: 0;
+}
+
+.PokemonFaiblessesElement {
+    padding-left: 1%;
+    border-radius: 8px;
+    margin: 0.5%;
+    opacity: 1;
+}
+
+.PokemonFaiblessesAnnonce {
+    padding-left: 1.2%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 0;
+}
+
+/*************************** Pokemon Types **************************/
+
+.types {
+    width: 23%;
+    border-radius: 10px;
+    border: black 2.5px solid;
+    top: 64%;
+    left: 26.7%;
+    display: flex;
+    position: absolute;
+
+}
+.image_type_1_pokemon { 
+    left: 0;
+    width: 50%;
+    height: auto;
+}
+
+.image_type_2_pokemon { 
+    right: 0;
+    width: 50%;
+    height: auto;
+}
+
+/****************** Barre de recherche ****************************/
+
+.recherchePokemon {
+    font-family: 'Pokemon Solid', sans-serif;
+    top: -55px;
+    left: 100px;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+    height: 35px;
+    display: flex;
+    width: 40%;
+    font-size: 1.2rem;
+    cursor: url('https://media.discordapp.net/attachments/693096468541734912/1051947083369808033/icons8-text-cursor-20.png') , text;
+}
+
+.recherchePokemon:hover {
+    background-color: rgba(237, 231, 225);
+}
+
+.formulaire {
+    height: 0px;
+}
+
+/*********************** Evo Pokemon *************************************/
+
+.EvoContainerTotal {
+    width: 46%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    column-count: 3;
+    background-color: rgba(255, 255, 255, 0.686);
+    border: black 2.5px solid;
+    border-radius: 10px;
+    top: 64%;
+    left: 52%;
+}
+
+.Evo_Container {
+    width: 33%;
+    object-fit: cover;
+    height: auto;
+    position: relative;
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051943830565437442/icons8-instinct-pokemon-30.png') 30 30 , pointer;
+}
+
+.Image_Evo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 0;  
+}
+
+/******************************* Responsive *****************************************/
+
+@media screen and (max-width: 1360px) {
+    .stats_pokemon {
+      font-size: 0.9rem;
+    }
+    .faiblesses_pokemon{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .stats_pokemon {
+      font-size: 0.8rem;
+    }
+    .faiblesses_pokemon{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .stats_pokemon {
+      font-size: 0.7rem;
+    }
+    .faiblesses_pokemon{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nom_pokemon {
+      font-size: large;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .nom_pokemon {
+      font-size: medium;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .nom_pokemon {
+      font-size: small;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .nom_pokemon {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .nom_pokemon {
+      font-size: xx-small;
+    }
+}

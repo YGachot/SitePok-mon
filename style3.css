@@ -1,0 +1,130 @@
+body {
+    margin:0;
+    padding: 0;
+    background: url('https://cdn.discordapp.com/attachments/1020008766479020033/1067354729077805116/laihibkyx1o41.png');
+}
+.jeu img {
+    filter: brightness(0);
+}   
+
+p {
+    font-family: 'Pokemon Solid';
+}
+
+* {
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051944700317270067/icons8-instinct-pokemon-30.png') 30 30, auto;
+}  
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: -12%;
+    z-index: -99;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #myVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #myVideo{
+        width: auto;
+        height: 100%;
+    }
+}
+/***************** boutons ************************************/
+
+.button {
+    border-radius: 10px;
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051943830565437442/icons8-instinct-pokemon-30.png') 30 30 , pointer;
+    font-family: 'Pokemon Solid', sans-serif;
+    border: black solid 2.5px;
+    font-size: x-large;
+    background-color: white;
+    width: 25%;
+    position: absolute;
+}
+.button:hover {
+    background-color: rgba(237, 231, 225);
+}
+
+#boutonvalid {
+    left: 23.7%;
+    top: 14.5%
+}
+
+#boutonstop {
+    right: 23.7%;
+    top: 14.5%;
+}
+
+#boutonstart {
+    left: 51%;
+    transform: translateX(-50%);
+    top: 41%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#boutonstart:hover {
+    background-color: rgba(237, 231, 225);
+}
+/******************************** Reponse *********************************/
+#input {
+    font-family: 'Pokemon Solid', sans-serif;
+    border-radius: 10px;
+    border: black solid 2.5px;
+    font-size: x-large;
+    width: 52%;
+    cursor: url('https://media.discordapp.net/attachments/693096468541734912/1051947083369808033/icons8-text-cursor-20.png') , text;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 2%;
+}
+
+#input:hover {
+    background-color: rgba(237, 231, 225);
+}
+
+
+/******************************* image *****************************/
+
+.imagemystere {
+    width: 35.3%;
+    height: auto;
+    top: 27%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.acceuil {
+    cursor: url('https://media.discordapp.net/attachments/1020008766479020033/1051943830565437442/icons8-instinct-pokemon-30.png') 30 30 , pointer;
+    position: absolute;
+    width: 8%;
+    top: -0.5%;
+    left: 15%;
+}
+
+/************* points **************************/
+
+.pnts {
+    position: absolute;
+    width: 9%;
+    top: -1.5%;
+    right: 13%;
+    font-size: x-large;
+}
+
+/********************** nom ************************/
+
+.nom {
+    position: absolute;
+    width: 20%;
+    top: -1%;
+    right: 24%;
+    font-size: x-large;
+}

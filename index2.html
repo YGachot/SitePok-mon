@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title"></title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="https://media.discordapp.net/attachments/1020008766479020033/1050762243882614784/Chrono_Ball.png">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+</head>
+<body>
+    <section class="bandeH">
+        <a href="index.html" ><img  class="acceuil" src="https://media.discordapp.net/attachments/1020008766479020033/1050762243882614784/Chrono_Ball.png"></a>
+        <a href="https://youtube.com/shorts/9TqnNuQ7nhI?feature=share"><img  class="mypokedex" src="https://cdn.discordapp.com/attachments/1020008766479020033/1050718058408333312/489dd04676885b8128bea05a947e221b.png"></a>
+    </section>
+    <form onsubmit="recherchePokemon(event)" class="formulaire">
+        <input type="text" name="pokemon" autocomplete="off" placeholder="Recherchez un Pokémon" class="recherchePokemon">
+    </form>
+    <div class="carte_complete">
+        <div class="identificateur">
+            <div class="image_container">
+                <img src="" alt="" class="image_pokemon">
+            </div>
+            <p class="nom_pokemon"></p>
+            <p class="id_pokemon"></p>
+        </div>
+        <div class="stats_pokemon"></div>
+        <div class="types">
+            <p class="type_1_pokemon"></p>
+            <img src="" alt="" class="image_type_1_pokemon">
+            <p class="type_2_pokemon"></p>
+            <img src="" alt="" class="image_type_2_pokemon">
+        </div>
+        <div class="faib_container">
+            <div class="faiblesses_pokemon"></div>
+        </div>
+        <div class="EvoContainerTotal"></div>
+    </div>
+    <script src="app2.js"></script>
+</body>
+</html>
