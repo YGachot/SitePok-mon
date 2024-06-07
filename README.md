@@ -1,2 +1,2 @@
-# SitePok-mon
+# SitePokémon
 réalisation d'un pokédex
